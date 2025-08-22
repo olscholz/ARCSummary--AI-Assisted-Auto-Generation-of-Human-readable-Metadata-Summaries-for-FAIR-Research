@@ -1,0 +1,43 @@
+ARCSummary: Evaluation scheme
+ARCs are machine readable FAIR research data containers, which can be difficult to
+assess at a glance by humans. To close this gap, human readable summaries like
+READMEs can be important. To facilitate creation of these summaries, we aim to
+employ LLMs (Large language models), which can generate human readable free texts
+from structured data. As the output of these tools depends heavily on the given
+prompt, we want to assess the quality of the output for 3 different prompts to select
+the best one.
+Your role as annotators is now to score the outputs of the three different prompts
+based on the laid-out evaluation metrics with a partial credit ranging from 1
+(completely meets the criterion), 0.7 (mostly meets the criterion), 0.3 (barely meets
+the criterion) to 0 (fails to meet the criterion). Comments or justifications are
+encouraged, but not mandatory. Sentences with clear redundancies, hallucinations,
+grammatical or general errors can also be highlighted with colour. Finally, you are
+asked to evaluate each summary holistically if you perceive the generated output as
+generally concise, accurate and potentially useful in the task of summarizing the ARC.
+The respective tables for grading are appended after each output.
+Evaluation metrics
+To evaluate the generated text summaries the following metrics have been adapted
+from Kryściński et al., 2019. The definitions were further refined with the DUC quality
+guidelines (Dang, 2005) and terminology for the ARC context:
+Relevance: this criterion is met if the summary successfully captures the important
+content of the ARC in terms of the experimental objective mainly attributed to the first
+paragraph. Points should be subtracted if any notable omissions (e. g. key factors that
+were excluded) or redundancies (e. g. excess in specific information) are identified.
+Coherence: evaluates the collective quality of all sentences, in terms of structure and
+organization. Therefore, the summary should follow a logical flow that not only
+recounts associated information, but each sentence contributes to a coherent body of
+knowledge. Pay attention to how the summary considers the relationship of Studies
+and Assays to construct the narrative.
+Factual Consistency: refers to the factual consistency between the generated
+summary and source ARC. The summary should only therefore contain statements
+that can accurately be traced back to the ARC. Hallucinations, i. e. generation of
+inconsistent, made-up or false content should be penalized accordingly.
+Fluency: accounts for the quality of the individual sentences, in terms of grammar, use
+of domain specific vocabulary. Any grammatical, formatting or capitalization errors
+should be penalized, alongside sentences that decrease overall readability (e.g.,
+fragments, missing components).
+References
+Dang, H. (2006). Duc 2005. Proceedings of the Workshop on Task-Focused Summarization and
+Question Answering - SumQA '06. https://doi.org/10.3115/1654679.1654689
+Kryściński, W., Keskar, N. S., McCann, B., Xiong, C., & Socher, R. (2019). Neural text summarization: A
+critical evaluation. arXiv preprint arXiv:1908.08960.
